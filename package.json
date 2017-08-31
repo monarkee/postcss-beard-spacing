@@ -1,0 +1,41 @@
+{
+  "name": "postcss-beard-spacing",
+  "version": "0.0.0",
+  "description": "PostCSS plugin to generate padding and margin utilities based on a scale",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "padding",
+    "margin",
+    "scale",
+    "helpers",
+    "atomic css"
+  ],
+  "author": "David Hemphill <davidlee.hemphill@gmail.com>",
+  "license": "MIT",
+  "repository": "davidhemphill/postcss-beard-spacing",
+  "bugs": {
+    "url": "https://github.com/davidhemphill/postcss-beard-spacing/issues"
+  },
+  "homepage": "https://github.com/davidhemphill/postcss-beard-spacing",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "postcss": "^6.0.1",
+    "postcss-value-parser": "^3.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-postcss": "^2.0.2",
+    "jest": "^20.0.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss/es5",
+    "env": {
+      "jest": true
+    }
+  }
+}
