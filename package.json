@@ -14,11 +14,11 @@
   ],
   "author": "David Hemphill <davidlee.hemphill@gmail.com>",
   "license": "MIT",
-  "repository": "davidhemphill/postcss-beard-spacing",
+  "repository": "monarkee/postcss-beard-spacing",
   "bugs": {
-    "url": "https://github.com/davidhemphill/postcss-beard-spacing/issues"
+    "url": "https://github.com/monarkee/postcss-beard-spacing/issues"
   },
-  "homepage": "https://github.com/davidhemphill/postcss-beard-spacing",
+  "homepage": "https://github.com/monarkee/postcss-beard-spacing",
   "dependencies": {
     "lodash": "^4.17.4",
     "postcss": "^6.0.1",
