@@ -1,6 +1,6 @@
 {
   "name": "postcss-beard-spacing",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "PostCSS plugin to generate padding and margin utilities based on a scale",
   "keywords": [
     "postcss",
