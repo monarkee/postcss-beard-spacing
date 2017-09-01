@@ -50,6 +50,58 @@
 .ml1 {
     margin-left: 15rem
 }
+.pa2 {
+    padding-top: 20rem;
+    padding-right: 20rem;
+    padding-bottom: 20rem;
+    padding-left: 20rem
+}
+.pv2 {
+    padding-top: 20rem;
+    padding-bottom: 20rem
+}
+.ph2 {
+    padding-left: 20rem;
+    padding-right: 20rem
+}
+.pt2 {
+    padding-top: 20rem
+}
+.pr2 {
+    padding-right: 20rem
+}
+.pb2 {
+    padding-bottom: 20rem
+}
+.pl2 {
+    padding-left: 20rem
+}
+.ma2 {
+    margin-top: 20rem;
+    margin-right: 20rem;
+    margin-bottom: 20rem;
+    margin-left: 20rem
+}
+.mv2 {
+    margin-top: 20rem;
+    margin-bottom: 20rem
+}
+.mh2 {
+    margin-left: 20rem;
+    margin-right: 20rem
+}
+.mt2 {
+    margin-top: 20rem
+}
+.mr2 {
+    margin-right: 20rem
+}
+.mb2 {
+    margin-bottom: 20rem
+}
+.ml2 {
+    margin-left: 20rem
+}
 @media (min-width: 300px) {
     .sm-pa1 {
         padding-top: 15rem;
@@ -102,6 +154,58 @@
     }
     .sm-ml1 {
         margin-left: 15rem
+    }
+    .sm-pa2 {
+        padding-top: 20rem;
+        padding-right: 20rem;
+        padding-bottom: 20rem;
+        padding-left: 20rem
+    }
+    .sm-pv2 {
+        padding-top: 20rem;
+        padding-bottom: 20rem
+    }
+    .sm-ph2 {
+        padding-left: 20rem;
+        padding-right: 20rem
+    }
+    .sm-pt2 {
+        padding-top: 20rem
+    }
+    .sm-pr2 {
+        padding-right: 20rem
+    }
+    .sm-pb2 {
+        padding-bottom: 20rem
+    }
+    .sm-pl2 {
+        padding-left: 20rem
+    }
+    .sm-ma2 {
+        margin-top: 20rem;
+        margin-right: 20rem;
+        margin-bottom: 20rem;
+        margin-left: 20rem
+    }
+    .sm-mv2 {
+        margin-top: 20rem;
+        margin-bottom: 20rem
+    }
+    .sm-mh2 {
+        margin-left: 20rem;
+        margin-right: 20rem
+    }
+    .sm-mt2 {
+        margin-top: 20rem
+    }
+    .sm-mr2 {
+        margin-right: 20rem
+    }
+    .sm-mb2 {
+        margin-bottom: 20rem
+    }
+    .sm-ml2 {
+        margin-left: 20rem
     }
 }
 @media (min-width: 600px) {
@@ -157,6 +261,58 @@
     .md-ml1 {
         margin-left: 15rem
     }
+    .md-pa2 {
+        padding-top: 20rem;
+        padding-right: 20rem;
+        padding-bottom: 20rem;
+        padding-left: 20rem
+    }
+    .md-pv2 {
+        padding-top: 20rem;
+        padding-bottom: 20rem
+    }
+    .md-ph2 {
+        padding-left: 20rem;
+        padding-right: 20rem
+    }
+    .md-pt2 {
+        padding-top: 20rem
+    }
+    .md-pr2 {
+        padding-right: 20rem
+    }
+    .md-pb2 {
+        padding-bottom: 20rem
+    }
+    .md-pl2 {
+        padding-left: 20rem
+    }
+    .md-ma2 {
+        margin-top: 20rem;
+        margin-right: 20rem;
+        margin-bottom: 20rem;
+        margin-left: 20rem
+    }
+    .md-mv2 {
+        margin-top: 20rem;
+        margin-bottom: 20rem
+    }
+    .md-mh2 {
+        margin-left: 20rem;
+        margin-right: 20rem
+    }
+    .md-mt2 {
+        margin-top: 20rem
+    }
+    .md-mr2 {
+        margin-right: 20rem
+    }
+    .md-mb2 {
+        margin-bottom: 20rem
+    }
+    .md-ml2 {
+        margin-left: 20rem
+    }
 }
 @media (min-width: 900px) {
     .lg-pa1 {
@@ -210,5 +366,57 @@
     }
     .lg-ml1 {
         margin-left: 15rem
+    }
+    .lg-pa2 {
+        padding-top: 20rem;
+        padding-right: 20rem;
+        padding-bottom: 20rem;
+        padding-left: 20rem
+    }
+    .lg-pv2 {
+        padding-top: 20rem;
+        padding-bottom: 20rem
+    }
+    .lg-ph2 {
+        padding-left: 20rem;
+        padding-right: 20rem
+    }
+    .lg-pt2 {
+        padding-top: 20rem
+    }
+    .lg-pr2 {
+        padding-right: 20rem
+    }
+    .lg-pb2 {
+        padding-bottom: 20rem
+    }
+    .lg-pl2 {
+        padding-left: 20rem
+    }
+    .lg-ma2 {
+        margin-top: 20rem;
+        margin-right: 20rem;
+        margin-bottom: 20rem;
+        margin-left: 20rem
+    }
+    .lg-mv2 {
+        margin-top: 20rem;
+        margin-bottom: 20rem
+    }
+    .lg-mh2 {
+        margin-left: 20rem;
+        margin-right: 20rem
+    }
+    .lg-mt2 {
+        margin-top: 20rem
+    }
+    .lg-mr2 {
+        margin-right: 20rem
+    }
+    .lg-mb2 {
+        margin-bottom: 20rem
+    }
+    .lg-ml2 {
+        margin-left: 20rem
     }
 }

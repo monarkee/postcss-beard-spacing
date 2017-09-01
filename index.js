@@ -28,10 +28,18 @@ module.exports = postcss.plugin('postcss-beard-spacing', function(opts) {
 
     return function(root, result) {
         let spacers = _.flatMap(spacingScale, function(scaleValue, scaleKey) {
-            return generateSpacer(breakpoints, scaleValue, scaleKey)
+            return _.map(helpers, function(helper, key) {
+                return makeFunctionalRule(
+                    `.${key}${scaleKey}`,
+                    helper,
+                    scaleValue
+                )
+            })
         })
 
-        root.prepend(spacers)
+        let responsive = generateResponsiveRules(breakpoints, spacingScale)
+
+        root.append(spacers.concat(responsive))
     }
 })
 
@@ -55,39 +63,28 @@ const makeFunctionalRule = function(selector, properties, value) {
 }
 
 /**
- * Generate a complete set of spacing helpers
+ * Generate a complete set of responsive spacing helpers
  * @param  {object} breakpoints A set of breakpoints to generate the spacer for
- * @param  {string} value       The value for each declaration in each rule
- * @param  {string} key         The key in the scale to use
+ * @param  {object} spacingScale The spacing scale to use
  * @return {array}             Rules
  */
-const generateSpacer = function(breakpoints, scaleValue, scaleKey) {
-    // Generate the base rules
-    let rules = _.flatMap(helpers, function(helper, key) {
-        return makeFunctionalRule(`.${key}${scaleKey}`, helper, scaleValue)
-    })
-
-    // Generate the responsive rules
-    let responsiveRules = _.flatMap(breakpoints, function(
-        breakpointValue,
-        breakpointKey
-    ) {
+const generateResponsiveRules = function(breakpoints, spacingScale) {
+    return _.map(breakpoints, function(breakpointValue, breakpointKey) {
         let mediaQuery = postcss.atRule({
             name: 'media',
             params: breakpointValue,
         })
 
-        let rules = _.flatMap(helpers, function(helper, key) {
-            return makeFunctionalRule(
-                `.${breakpointKey}-${key}${scaleKey}`,
-                helper,
-                scaleValue
-            )
+        let rules = _.flatMap(spacingScale, function(scaleValue, scaleKey) {
+            return _.map(helpers, function(helperValues, helperKey) {
+                return makeFunctionalRule(
+                    `.${breakpointKey}-${helperKey}${scaleKey}`,
+                    helperValues,
+                    scaleValue
+                )
+            })
         })
 
         return mediaQuery.append(rules)
     })
-
-    // Join the sets of rules together
-    return rules.concat(responsiveRules)
 }

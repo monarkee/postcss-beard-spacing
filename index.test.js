@@ -22,6 +22,7 @@ it('it creates helper classes from a spacing-scale config', () => {
 
         spacingScale: {
             1: '15rem',
+            2: '20rem',
         },
     })
 })
